@@ -1,6 +1,7 @@
 # Curso Java Pi
-### Using Visual Studio Code & Java Pack VSCode
-1. Install Java pack VSCode
+### Using Eclipse Mars Package 2
+1. Download [Mars](https://www.eclipse.org/downloads/packages/release/mars/2) package 2
+2. JDK 1.8
 
 
 
