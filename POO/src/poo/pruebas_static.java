@@ -6,11 +6,15 @@ public class pruebas_static {
 		// TODO Auto-generated method stub
 		Empleados trabajador1 = new Empleados("Paco");
 		Empleados trabajador2 = new Empleados("Ana");
+		Empleados trabajador3 = new Empleados("Antonio");
+		Empleados trabajador4 = new Empleados("Maria");
 		
 		trabajador1.cambiaSeccion("RRHH");
 		
 		System.out.println(trabajador1.devuelveDatos());
 		System.out.println(trabajador2.devuelveDatos());
+		System.out.println(trabajador3.devuelveDatos());
+		System.out.println(trabajador4.devuelveDatos());
 	}
 
 }
@@ -19,10 +23,14 @@ class Empleados{
 	
 	private final String nombre;
 	private String seccion;
+	private int Id;
+	private static int IdSiguiente=1;
 	
 	public Empleados(String nom) {
 		nombre = nom;
 		seccion="Administracion";
+		Id=IdSiguiente;
+		IdSiguiente++;
 	}
 	
 	public void cambiaSeccion(String seccion) { //setter
@@ -30,7 +38,7 @@ class Empleados{
 	}
 	
 	public String devuelveDatos() {
-		return "El nombre es: " + nombre + " y la seccion es " + seccion;
+		return "El nombre es: " + nombre + " la seccion es " + seccion + " y el Id=" + Id;
 	}
 	
 }
